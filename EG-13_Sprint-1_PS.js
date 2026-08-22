@@ -106,7 +106,28 @@ function findSecondLargest(nums){
 
 
 
-const result = findSecondLargest([10, 20, 46, 45, 99, 99]);
+function findMode(arr) {
+    let mode = arr[0];
+    let maxCount = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        let count = 0;
+
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+                count++;
+            }
+        }
+
+        if (count > maxCount) {
+            maxCount = count;
+            mode = arr[i];
+        }
+    }
+
+    return mode;
+}
+const result = findMode([1, 3, 3, 2, 1, 3, 4]);
 console.log(result);
 
 
