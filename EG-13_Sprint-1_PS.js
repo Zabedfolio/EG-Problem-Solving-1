@@ -72,6 +72,14 @@ function isPrime(num){
 // console.log(result);
 
 
+function mergeSortedArrays(arr1, arr2){
+    let merge = [...arr1,...arr2]
+    return merge;
+}
+// const result = mergeSortedArrays([1, 3, 5], [2, 4, 6]);
+// console.log(result);
+
+
 
 
 
