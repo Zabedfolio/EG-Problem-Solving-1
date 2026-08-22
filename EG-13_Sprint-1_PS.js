@@ -127,8 +127,18 @@ function findMode(arr) {
 
     return mode;
 }
-const result = findMode([1, 3, 3, 2, 1, 3, 4]);
-console.log(result);
+// const result = findMode([1, 3, 3, 2, 1, 3, 4]);
+// console.log(result);
+
+function naturalSort(arr) {
+    return arr.sort((a,b) => {
+        let numA = parseInt(a.match(/\d+/)[0]);
+        let numB = parseInt(b.match(/\d+/)[0]);
+        return numA - numB;
+    });
+}
+// const result=naturalSort(["file10.txt", "file2.txt", "file1.txt"]);
+// console.log(result);
 
 
 
