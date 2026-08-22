@@ -93,6 +93,24 @@ function findMedian(nums){
 
 
 
+function findSecondLargest(nums){
+    let sorted = nums.sort((a,b)=>b-a);
+    for(let i=1;i<=sorted.length;i++){
+        if(sorted[i]!==sorted[0]){
+            return sorted[i];
+        }
+    }
+}
+// const result = findSecondLargest([10, 20, 46, 45, 99, 99]);
+// console.log(result);
+
+
+
+const result = findSecondLargest([10, 20, 46, 45, 99, 99]);
+console.log(result);
+
+
+
 
 
 
