@@ -27,6 +27,21 @@ function generateFibonacci(n) {
 // console.log(result);
 
 
+function findGCD(a, b){
+    while(b!=0){
+        let temp = b;
+        b = a%b;
+        a = temp;
+    }
+    return a;
+}
+// const result = findGCD(48,48)
+// console.log(result);
+
+
+
+
+
 
 
 
