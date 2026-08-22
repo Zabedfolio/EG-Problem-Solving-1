@@ -72,6 +72,8 @@ function isPrime(num){
 // console.log(result);
 
 
+
+
 function mergeSortedArrays(arr1, arr2){
     let merge = [...arr1,...arr2]
     return merge;
@@ -79,6 +81,15 @@ function mergeSortedArrays(arr1, arr2){
 // const result = mergeSortedArrays([1, 3, 5], [2, 4, 6]);
 // console.log(result);
 
+
+
+function findMedian(nums){
+    let sorted = nums.sort((a,b)=> a-b)
+    const mid = Math.floor(sorted.length / 2);
+    return sorted[mid]
+}
+// const result = findMedian([7, 1, 3, 4, 9]);
+// console.log(result);
 
 
 
