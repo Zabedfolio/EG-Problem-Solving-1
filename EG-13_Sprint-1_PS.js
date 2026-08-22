@@ -38,6 +38,25 @@ function findGCD(a, b){
 // const result = findGCD(48,48)
 // console.log(result);
 
+function findLCM(a, b){
+    if(a==0 || b==0) return 0;
+
+    sub_a = a;
+    sub_b = b;
+
+    while(sub_a != sub_b){
+        if(sub_a<sub_b){
+            sub_a+=a;
+        }else{
+            sub_b+=b;
+        }
+    }
+    return sub_a;
+}
+// const result = findLCM(12,18)
+// console.log(result);
+
+
 
 
 
